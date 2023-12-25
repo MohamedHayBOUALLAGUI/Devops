@@ -8,7 +8,7 @@ chrome_options.add_argument('--headless')
 chrome_options.add_argument('--disable-gpu')  # Disable GPU acceleration for headless mode
 
 # Set up the WebDriver (in this case, using Chrome in headless mode)
-driver = webdriver.Chrome(options=chrome_options)
+driver = webdriver.Chrome(executable_path='/var/lib/jenkins/chromedriver', options=chrome_options)
 
 try:
     # Open the webpage
